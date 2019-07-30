@@ -9,18 +9,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../../styles/main.css">
     <title>fitM8</title>
 </head>
 
-<body class=" bg-light">
+<body class="bg-light">
     <div class="container mt-5">
-        <div class="jumbotron w-75 mx-auto mt-5 p-5">
-            <h1 class="display-4 mb-4 mx-auto">fitM8</h1>
-            <p class="lead">Bem vindo ao fitM8 seu companheiro de treinos para qualquer ocasião.</p>
-            <hr class="my-4">
-            <p>Entre com sua conta e tenha acesso a uma experiência inovadora no universo fitness.</p>
-            <a class="btn btn-primary btn-lg mr-auto mt-4" href="./main/login/login.html" role="button">Acesse agora!</a>
+
+            <div class="row">
+                <a href="../../index.html" class="mx-auto mt-5"><span class="logo">Icon</span></a>
+            </div>
+        
+        <div class="card shadow mx-auto w-50 mt-5 p-5">
+            <h1 class="mb-5 mx-auto">Novo usuário</h1>
+            <form>
+              <div class="form-group">
+                <!-- Implementar RegEx -->
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Senha">
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-5">Entrar</button>
+            </form>
+            <p class="text-center my-4">Não possui cadastro? <a href="./register.html">Cadastre-se já!</a></p>
         </div>
     </div>
 
