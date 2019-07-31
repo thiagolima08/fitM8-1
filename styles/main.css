@@ -35,7 +35,13 @@ Laranja
     box-shadow: none;
 }
 
+.navbar {
+    background-color: #3C40C6;
+}
 
+.navbar a {
+    color: #ebebeb !important;
+}
 
 
 

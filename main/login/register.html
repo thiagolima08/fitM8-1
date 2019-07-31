@@ -16,83 +16,50 @@
 <body class="bg-light">
     <div class="container mt-5">
 
-        <div class="row">
-            <a href="../../index.html" class="mx-auto mt-5"><span class="logo">Icon</span></a>
-        </div>
-
         <div class="card shadow mx-auto w-50 mt-5 p-5">
-            <h1 class="mb-5 mx-auto">Login</h1>
+            <a href="login.html">Back</a>
+            <h1 class="mb-5 mx-auto">Novo usuário</h1>
             <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                    </div>
-                </div>
+                    <div class="form-group p-0 col-md-12">
+                        <label for="inputEmail4">Email*</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                    </div>               
+
                 <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Av. Principal, 123">
                 </div>
                 <div class="form-group w-50">
-                    <!-- TODO RegEx -->
+                    <!-- TODO Restrição com RegEx - Puxar API de CEPs -->
                     <label for="cep">CEP</label>
                     <input type="text" class="form-control" id="cep"
                         placeholder="CEP">
                 </div>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputCity">City</label>
-                        <input type="text" class="form-control" id="inputCity">
+                    <div class="form-group col-md-8">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" disabled>
                     </div>
                     <div class="form-group col-md-4">
-                        <label for="inputState">State</label>
-                        <select id="inputState" class="form-control">
-                            <option value="none">Escolha...</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
+                        <label for="estado">Estado</label>
+                        <input type="text" class="form-control" id="estado" disabled>
 
-                        </select>
                     </div>
+                </div>
+
+                    <div class="form-group p-0 w-50">
+                            <label for="senha">Senha*</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Digite uma senha" required>
+                        </div>
                     
-                </div>
-                <div class="form-group">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                        <div class="form-group p-0 w-50">
+                            <label for="senha">Repetir senha*</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Digite novamente a senha" required>
+                        </div>
+                    
+                
+
+                <button type="submit" class="btn btn-primary btn-block mt-5">Cadastrar</button>
             </form>
         </div>
     </div>
