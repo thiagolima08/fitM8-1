@@ -44,17 +44,48 @@ Laranja
     color: #ebebeb !important;
 }
 
-
-
-;
-
 /*************************************
-2. Card Treino
+2. Buscador
 ************************************/
-.card-body {
-    border-top: 1px solid black;
+/* 2.1 BOTÃO */
+.add-treino {
+    border-radius: 60%;
+    position: fixed;
+    top: 34%;
+    left: 93%;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
 }
 
-.card-deck .card {
-    align-items: center;
+.add-treino .inner-display {
+    background-color: #FFAAA6;
+    position: fixed;
+    top: 37.4%;
+    border-radius: 47%;
+    left: 94.9%;
+    color: rgba(0, 0, 0, 0.75);
+    width: 24px
+}
+
+
+
+/* 2.2 CARDS */
+.card-columns .card {
+    border: 5px solid rgba(255, 95, 87, 0);
+    transition: 0.3s border;
+}
+
+.card-body {
+    border-top: 1px solid rgba(0, 0, 0, 0.250);
+}
+
+.card-treino img {
+    max-height: 300px;
+    width: 160px;
+}
+
+.card-columns .card-treino:hover {
+    z-index: 1;
+    border: 5px solid #FF5F57 
 }
