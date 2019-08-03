@@ -19,6 +19,7 @@ Laranja
 /***********************************
 1. Fixes
 **********************************/
+
 .btn-primary {
    background-color: #FF5F57; 
    border: none;
@@ -46,3 +47,14 @@ Laranja
 
 
 ;
+
+/*************************************
+2. Card Treino
+************************************/
+.card-body {
+    border-top: 1px solid black;
+}
+
+.card-deck .card {
+    align-items: center;
+}

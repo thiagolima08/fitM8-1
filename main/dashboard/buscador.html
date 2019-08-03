@@ -9,12 +9,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../../styles/main.css">
     <title>fitM8</title>
 </head>
 
 <body class="bg-light">
     <div class="container-fluid p-0">
+            <button class="btn btn-primary">+</button>
+
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <a class="navbar-brand" href="../../index.html">Icon</a>
@@ -24,23 +27,33 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active mx-3" href="#">Painel<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link mx-3" href="buscador.html">Buscador</a>
+                    <a class="nav-item nav-link active mx-3" href="dashboard.html">Painel<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link mx-3" href="#">Buscador</a>
                     	<a class="nav-item nav-link align-left mx-3" href="#">Usuário</a>
                 </div>
             </div>
         </nav>
-        <!-- Painel -->
-        <div class="row">
-            <div class="card mt-5 mx-auto w-75 shadow">
+        <!-- Buscador de exercícios -->
+        <!-- Título -->
+        <div class="row mt-5 mx-auto w-75">
+            <div class="card shadow w-100">
                 <div class="card-header p-3 mb-0">
-                    <h1 class="display-4">Minhas Fichas</h1>
+                    <h1 class="display-4">Buscador de Exercicíos</h1>
                 </div>
                 <div class="card-text p-3">
-                    <p>Aqui você acessa todos os seus treinos cadastrados. Acesse nosso <a href="buscador.html">buscador</a> para cadastrar novos treinos.</p>
+                    <p>Procure e selecione os exercícios disponíveis e faça seu exercício customizado!</p>
                 </div>
             </div>
         </div>
+        <!-- Deck -->
+        <div class="row mt-5 mx-auto w-75">
+            <div class="card-columns deck-treinos">
+
+            </div>
+        </div>
+
+
+
     </div>
 
     <!-- Optional JavaScript -->
@@ -54,6 +67,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="../../js/test-exercises.js"></script>
 </body>
 
 </html>
