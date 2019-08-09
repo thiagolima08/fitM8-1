@@ -1,33 +1,29 @@
-let deckTreinosDOM = document.querySelector(".deck-treinos");
-let newTreinos = new Array;
+//Get elements
+const deckTreinosDOM = document.querySelector(".deck-treinos");
 
-fetch('https://wger.de/api/v2/exerciseimage/?format=json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    data = myJson;
-
-    return data
-  })
-  .then(function(data) {
-    for (let i of data['results']) {
-      deckTreinosDOM.insertAdjacentHTML('beforeend', `                
-          <div class="card shadow card-treino">
-                  <img src="${i['image']}" class="mx-auto my-3 d-block card-img-top img-fluid" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title"><strong>Supino Plano</strong></h5>
-                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"></p>
-                      <div class="text-right">
-                      <button type="button" class="btn btn-primary mt-2 add-card">Adicionar</button>
-                      </div>
+//create references
+let arr=[]
+for (let i=0;i<=9;i++){  
+   dbRefObject = firebase.database().ref().child(i)
+   
+//Sync object changes
+dbRefObject.on('value', snap => {
+  const obj = snap.val() 
+  arr.push( 'beforeend', `                
+  <div class="card shadow card-treino">
+          <img src="${obj.image}" class="mx-auto my-3 d-block card-img-top img-fluid" alt="...">
+      <div class="card-body">
+          <h5 class="card-title"><strong>${obj.title}</strong></h5>
+              <p class="card-text">${obj.description}</p>
+              <p class="card-text"></p>
+              <div class="text-right">
+              <button type="button" class="btn btn-primary mt-2 add-card">Adicionar</button>
               </div>
-              
-              
-          </div>`)
-      }
-    });
+      </div>      
+  </div>`)  
+  deckTreinosDOM.insertAdjacentHTML('beforeend', arr[i])
+
+});}
 
 document.addEventListener('click', (event) => {
   
