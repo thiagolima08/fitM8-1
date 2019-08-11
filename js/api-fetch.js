@@ -6,10 +6,10 @@ let arr=[]
 for (let i=0;i<=9;i++){  
    dbRefObject = firebase.database().ref().child(i)
    
-//Sync object changes
+//input object in html
 dbRefObject.on('value', snap => {
   const obj = snap.val() 
-  arr.push( 'beforeend', `                
+  arr.push(`                
   <div class="card shadow card-treino">
           <img src="${obj.image}" class="mx-auto my-3 d-block card-img-top img-fluid" alt="...">
       <div class="card-body">
