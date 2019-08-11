@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Righteous&display=swap');
+@import url('../styles/index.css');
 /******* PALETA **********
 Azul
 .color-primary-0 { color: #3C40C6 }	
@@ -13,16 +15,34 @@ Laranja
 .color-primary-3 { color: #EA3A30 }
 .color-primary-4 { color: #BF1B13 }
 
+Branco
+#F8F3F3
+
 
 
 
 /***********************************
 1. Fixes
 **********************************/
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17.5px;
+    box-sizing: border-box;
+}
 
 .btn-primary {
    background-color: #FF5F57; 
    border: none;
+}
+
+.btn-danger {
+    border: none;
+}
+
+.btn-danger:hover, 
+.btn-danger:active,
+.btn-danger:link {
+    box-shadow: none;
 }
 
 .btn-primary:hover, 
@@ -50,22 +70,19 @@ Laranja
 /* 2.1 BOTÃO */
 .add-treino {
     border-radius: 60%;
+    font-size: 3.5rem;
     position: fixed;
-    top: 34%;
-    left: 93%;
+    top: 89%;
+    left: 91%;
     z-index: 2;
-    height: 50px;
-    width: 50px;
-}
+    height: 70px;
+    width: 70px;
 
-.add-treino .inner-display {
-    background-color: #FFAAA6;
-    position: fixed;
-    top: 37.4%;
-    border-radius: 47%;
-    left: 94.9%;
-    color: rgba(0, 0, 0, 0.75);
-    width: 24px
+    background-image: url(../assets/icons/_ionicons_svg_md-add.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-size: 80%;
+    background-position: center;
 }
 
 
@@ -85,7 +102,30 @@ Laranja
     width: 160px;
 }
 
+.card-columns .card-treino .card-body {
+    transition: .2s background-color;
+}
+
 .card-columns .card-treino:hover {
     z-index: 1;
     border: 5px solid #FF5F57 
+}
+
+.card-columns .card-treino:active .card-body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.selected {
+    border: 5px solid #FF5F57 !important;
+}
+
+.selected .card-body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/*************************************
+3. Navbar 
+************************************/
+.navbar .navbar-brand img {
+    width: 60%;
 }

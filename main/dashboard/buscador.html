@@ -12,22 +12,25 @@
 
     <link rel="stylesheet" href="../../styles/main.css">
     <title>fitM8</title>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
 </head>
 
 <body class="bg-light">
     <div class="container-fluid p-0">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-            <a class="navbar-brand" href="../../index.html">Icon</a>
+            <a class="navbar-brand" href="../../index.html"><img src="../../assets/icons/dumbbell-solid.svg" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active mx-3" href="dashboard.html">Painel<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active mx-3" href="dashboard.html">Painel<span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link mx-3" href="#">Buscador</a>
-                    	<a class="nav-item nav-link align-left mx-3" href="#">Usuário</a>
+                    <a class="nav-item nav-link align-left mx-3" href="#">Usuário</a>
                 </div>
             </div>
         </nav>
@@ -45,7 +48,9 @@
         </div>
         <!-- Deck -->
         <div class="row mt-5 mx-auto w-75">
-            <button class="btn btn-primary add-treino">+<span class="inner-display">0</span></button>
+            <!-- Button ADD -->
+            <button class="btn btn-primary add-treino" data-toggle="modal" data-target="#register"></button>
+
             <div class="card-columns deck-treinos">
 
             </div>
@@ -55,6 +60,33 @@
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerLabel">Adicionar Treino</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group p-0 col-md-12">
+                            <label for="inputTreino">Nome do Treino*</label>
+                            <input type="text" class="form-control" id="inputTreino" placeholder="Treino" required>
+                        </div>
+                        <!-- TODO Fazer loop só nos títulos do array -->
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary mt-5">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -66,7 +98,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="../../js/test-exercises.js"></script>
+    <script src="../../js/fb.js"></script>
+    <script src="../../js/api-fetch.js"></script>
 </body>
 
 </html>
