@@ -35,6 +35,24 @@ Branco
    border: none;
 }
 
+.btn-primary:disabled,
+.btn-primary:disabled:hover {
+    color: #fff;
+    background-color: #FFAAA6;
+    border-color: #FFAAA6;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3C40C6;
+    border-color: #3C40C6;
+}
+
+.btn-outline-primary {
+    color: #3C40C6;
+    border-color: #3C40C6;
+} 
+
 .btn-danger {
     border: none;
 }
@@ -45,11 +63,12 @@ Branco
     box-shadow: none;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:hover, 
 .btn-primary:active,
 .btn-primary:link {
-    background-color: #BF1B13 !important; 
-    box-shadow: none !important;
+    background-color: #BF1B13; 
+    box-shadow: none; 
 }
 
 .btn:focus {
