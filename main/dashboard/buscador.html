@@ -46,7 +46,7 @@
                     <p>Procure e selecione os exercícios disponíveis e faça seu exercício customizado!</p>
 
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Insira nome do exercício"
+                        <input type="text" class="form-control ex-busca" placeholder="Insira nome do exercício"
                             aria-label="busca" aria-describedby="button">
                         <div class="input-group-append">
                             <button class="btn btn-outline-primary" type="button" id="search">Busca</button>
@@ -84,7 +84,7 @@
                     <form>
                         <div class="form-group p-0 col-md-12">
                             <label for="inputTreino">Nome do Treino*</label>
-                            <input type="text" class="form-control" id="inputTreino" placeholder="Treino" required>
+                            <input type="text" class="form-control input-treino" id="inputTreino" placeholder="Treino" required>
                         </div>
                         <!-- TODO Fazer loop só nos títulos do array -->
                         <div class='card shadow-sm'>
@@ -93,7 +93,7 @@
                         </div>
 
                         <div class="text-right">
-                            <button type="submit" class="btn btn-primary mt-5 card-treino">Cadastrar</button>
+                            <button type="submit" class="btn btn-primary mt-5 cad-treino">Cadastrar</button>
                         </div>
                     </form>
                 </div>
@@ -113,6 +113,8 @@
     </script>
     <script src="../../js/fb-database.js"></script>
     <script src="../../js/api-fetch.js"></script>
+    <script type="module" src="../../js/search.js"></script>
+    <script type="module" src="../../js/main.js"></script>
 </body>
 
 </html>

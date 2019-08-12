@@ -1,7 +1,8 @@
 //Get elements
 const deckTreinosDOM = document.querySelector(".deck-treinos");
 const addBtnDOM = document.querySelector(".add-treino");
-const cadBtnDOM = document.querySelector(".card-treino");
+const cadBtnDOM = document.querySelector(".cad-treino");
+const inputTreinoDOM = document.querySelector(".input-treino");
 const exListDOM = document.querySelector(".ex-list");
 let chosenExs = new Array;
 
@@ -69,4 +70,7 @@ addBtnDOM.addEventListener('click', () => {
 })
 
 
-
+cadBtnDOM.addEventListener('click', () => {
+  chosenExs.unshift('Treino ' + inputTreinoDOM.value);
+  alert(chosenExs);
+})

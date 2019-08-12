@@ -116,6 +116,10 @@ Branco
     border-top: 1px solid rgba(0, 0, 0, 0.250);
 }
 
+.card-treino {
+    transition: 0.3s display;
+}
+
 .card-treino img {
     max-height: 300px;
     width: 160px;
@@ -147,4 +151,9 @@ Branco
 ************************************/
 .navbar .navbar-brand img {
     width: 60%;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #FF5F57;
+    letter-spacing: 1px;
 }

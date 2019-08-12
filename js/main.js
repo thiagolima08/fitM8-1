@@ -1,2 +1,8 @@
-const regpassDOM = document.getElementById('register-senha');
-const regpassDOM2 = document.getElementById('co-senha');
+import { filterByInput } from './search.js';
+
+let exbuscaDOM = document.querySelector(".ex-busca");
+
+exbuscaDOM.addEventListener('keyup', () => {
+    filterByInput()
+});
+
