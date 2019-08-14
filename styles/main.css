@@ -30,10 +30,32 @@ Branco
     box-sizing: border-box;
 }
 
+body {
+    margin-top: 7rem;
+}
+
 .btn-primary {
    background-color: #FF5F57; 
    border: none;
 }
+
+.btn-primary:disabled,
+.btn-primary:disabled:hover {
+    color: #fff;
+    background-color: #FFAAA6;
+    border-color: #FFAAA6;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #3C40C6;
+    border-color: #3C40C6;
+}
+
+.btn-outline-primary {
+    color: #3C40C6;
+    border-color: #3C40C6;
+} 
 
 .btn-danger {
     border: none;
@@ -45,11 +67,12 @@ Branco
     box-shadow: none;
 }
 
+.btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:hover, 
 .btn-primary:active,
 .btn-primary:link {
-    background-color: #BF1B13 !important; 
-    box-shadow: none !important;
+    background-color: #BF1B13; 
+    box-shadow: none; 
 }
 
 .btn:focus {
@@ -97,6 +120,10 @@ Branco
     border-top: 1px solid rgba(0, 0, 0, 0.250);
 }
 
+.card-treino {
+    transition: 0.3s display;
+}
+
 .card-treino img {
     max-height: 300px;
     width: 160px;
@@ -123,9 +150,23 @@ Branco
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.ex-card {
+    min-width: 364px;
+}
 /*************************************
 3. Navbar 
 ************************************/
 .navbar .navbar-brand img {
     width: 60%;
+}
+
+.nav-item {
+    border-bottom: 3px solid rgba(255, 95, 87, 0);
+    border-top: 3px solid rgba(255, 95, 87, 0);
+    transition: .3s border-bottom;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #FF5F57;
+
 }
