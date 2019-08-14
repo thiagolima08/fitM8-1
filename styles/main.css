@@ -30,10 +30,6 @@ Branco
     box-sizing: border-box;
 }
 
-body {
-    margin-top: 7rem;
-}
-
 .btn-primary {
    background-color: #FF5F57; 
    border: none;
@@ -101,7 +97,7 @@ body {
     height: 70px;
     width: 70px;
 
-    background-image: url(../assets/icons/_ionicons_svg_md-add.png);
+    background-image: url(../assets/icons/plus_icon.png);
     background-repeat: no-repeat;
     background-size: 10%;
     background-size: 80%;
@@ -113,7 +109,7 @@ body {
 /* 2.2 CARDS */
 .card-columns .card {
     border: 5px solid rgba(255, 95, 87, 0);
-    transition: 0.3s border;
+    transition: 0.2s border;
 }
 
 .card-body {
@@ -125,8 +121,8 @@ body {
 }
 
 .card-treino img {
-    max-height: 300px;
-    width: 160px;
+    max-height: 200px;
+    width: 89px;
 }
 
 .card-columns .card-treino .card-body {
@@ -134,16 +130,28 @@ body {
 }
 
 .card-columns .card-treino:hover {
-    z-index: 1;
-    border: 5px solid #FF5F57 
+    z-index: 4;
+    transform: scale(1.16);
+    border: 4px solid #FF5F57 
 }
+
+
+.card-columns .card-treino p {
+    transition: 0.8s display;
+    font-size: 0.7rem;
+}
+
+.card-columns .card-treino:hover p {
+    display: inherit !important;
+}
+
 
 .card-columns .card-treino:active .card-body {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 .selected {
-    border: 5px solid #FF5F57 !important;
+    border: 4px solid #FF5F57 !important;
 }
 
 .selected .card-body {
