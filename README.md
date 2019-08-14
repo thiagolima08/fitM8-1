@@ -1,6 +1,7 @@
 # LS 2019.1 _ fitM8
 
 - Gabriel Borsero Estrela Bernardo (20181370004)
+- Thiago da Silva Lima (20182370020)
 
 # Descrição do Projeto
 
