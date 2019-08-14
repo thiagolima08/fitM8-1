@@ -1,5 +1,5 @@
-import { filterByInput } from './search.js';
-import { newTrain } from './new-train.js'
+import { filterByInput } from './search.mjs';
+import { newTrain } from './new-train.mjs'
 
 const exbuscaDOM = document.querySelector(".ex-busca");
 const cadBtnDOM = document.querySelector(".cad-treino");
