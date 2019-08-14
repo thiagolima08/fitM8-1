@@ -131,27 +131,20 @@ Branco
 
 .card-columns .card-treino:hover {
     z-index: 4;
-    transform: scale(1.16);
-    border: 4px solid #FF5F57 
+    border: 5px solid #FF5F57 
 }
 
 
 .card-columns .card-treino p {
-    transition: 0.8s display;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
-
-.card-columns .card-treino:hover p {
-    display: inherit !important;
-}
-
 
 .card-columns .card-treino:active .card-body {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 .selected {
-    border: 4px solid #FF5F57 !important;
+    border: 5px solid #FF5F57 !important;
 }
 
 .selected .card-body {
