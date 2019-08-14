@@ -18,7 +18,7 @@ dbRefObject.on('value', snap => {
   <div class="card shadow card-treino">
           <img src="${obj.image}" class="mx-auto my-3 d-block card-img-top img-fluid" alt="...">
       <div class="card-body">
-          <h5 class="card-title"><strong>${obj.title}</strong></h5>
+          <h3 class="card-title"><strong>${obj.title}</strong></h5>
               <p class="card-text">${obj.description}</p>
               <p class="card-text"></p>
               <div class="text-right">
@@ -59,6 +59,16 @@ document.addEventListener('click', (event) => {
 });
 
 addBtnDOM.addEventListener('click', () => {
+  let cardTreinoDOM = Array.from(document.querySelectorAll('.card-treino'));
+  console.log(cardTreinoDOM);
+
+  for (let i of cardTreinoDOM) {
+    i.classList.remove("selected");
+    i.lastElementChild.childNodes[7].firstElementChild.innerHTML = "Adicionar"
+    i.lastElementChild.childNodes[7].firstElementChild.classList.remove("btn-danger");
+    i.lastElementChild.childNodes[7].firstElementChild.classList.add("btn-primary");
+  }
+
   exListDOM.innerHTML = "";
 
   (chosenExs.length === 0) ? cadBtnDOM.setAttribute("disabled", "") : cadBtnDOM.removeAttribute("disabled");

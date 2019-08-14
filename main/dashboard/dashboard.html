@@ -16,10 +16,10 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
 </head>
 
-<body class="bg-light">
+<body style="background-color: rgb(231, 231, 231)">
     <div class="container-fluid p-0">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
             <a class="navbar-brand" href="../../index.html"><img src="../../assets/icons/dumbbell-solid.svg" alt=""
                     srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -40,7 +40,7 @@
         <div class="row mt-5 mx-auto w-75">
             <div class="card shadow w-100" id="painel">
                 <div class="card-header p-3 mb-0">
-                    <h1 class="display-4">Minhas Fichas</h1>
+                    <h2>Minhas Fichas</h2>
                 </div>
                 <div class="card-text p-3">
                     <p>Aqui você visualiza todos os seus treinos cadastrados. </p>
@@ -58,7 +58,7 @@
         <div class="row mt-5 mx-auto w-75">
             <div class="card shadow w-100" id="buscador">
                 <div class="card-header p-3 mb-0">
-                    <h1 class="display-4" >Buscador de Exercicíos</h1>
+                    <h2>Buscador de Exercicíos</h2>
                 </div>
                 <div class="card-text p-3">
                     <p>Procure e selecione os exercícios disponíveis e faça seu exercício customizado!</p>
@@ -74,7 +74,7 @@
             </div>
         </div>
         <!-- Deck -->
-        <div class="row mt-5 mx-auto w-75">
+        <div class="row mt-5 pt-5 mx-auto w-75">
             <!-- Button ADD -->
             <button class="btn btn-primary add-treino" data-toggle="modal" data-target="#register"></button>
 
@@ -132,6 +132,7 @@
     </script>
     <script src="../../js/fb-database.js"></script>
     <script src="../../js/api-fetch.js"></script>
+    <script src="../../dist/bundle.js"></script>
 </body>
 
 </html>
