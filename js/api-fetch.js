@@ -64,13 +64,9 @@ addBtnDOM.addEventListener('click', () => {
   (chosenExs.length === 0) ? cadBtnDOM.setAttribute("disabled", "") : cadBtnDOM.removeAttribute("disabled");
 
   for (let i of chosenExs) {
-    console.log(i);
+    /* console.log(i); */
     exListDOM.insertAdjacentHTML('beforeend', `<li class='card m-3 bg-light pl-4 py-3' style="border-left: 5px solid #3C40C6">${i}</li>`)
   }
 })
 
 
-cadBtnDOM.addEventListener('click', () => {
-  chosenExs.unshift('Treino ' + inputTreinoDOM.value);
-  alert(chosenExs);
-})

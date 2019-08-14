@@ -3,8 +3,7 @@ function filterByInput() {
     let exbuscaDOM = document.querySelector(".ex-busca");
     let cardDOM = Array.from(document.querySelectorAll('.card-treino'));
 
-    console.log(cardDOM);
-
+    /*console.log(cardDOM); */
 
     exbuscaDOM.addEventListener('keyup', (event) => {
     /* console.log(event.target.value); */

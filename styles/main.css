@@ -30,6 +30,10 @@ Branco
     box-sizing: border-box;
 }
 
+body {
+    margin-top: 7rem;
+}
+
 .btn-primary {
    background-color: #FF5F57; 
    border: none;
@@ -146,6 +150,9 @@ Branco
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.ex-card {
+    min-width: 364px;
+}
 /*************************************
 3. Navbar 
 ************************************/
@@ -153,7 +160,13 @@ Branco
     width: 60%;
 }
 
+.nav-item {
+    border-bottom: 3px solid rgba(255, 95, 87, 0);
+    border-top: 3px solid rgba(255, 95, 87, 0);
+    transition: .3s border-bottom;
+}
+
 .nav-item:hover {
     border-bottom: 3px solid #FF5F57;
-    letter-spacing: 1px;
+
 }
