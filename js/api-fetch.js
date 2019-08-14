@@ -64,6 +64,9 @@ addBtnDOM.addEventListener('click', () => {
 
   for (let i of cardTreinoDOM) {
     i.classList.remove("selected");
+    i.lastElementChild.childNodes[7].firstElementChild.innerHTML = "Adicionar"
+    i.lastElementChild.childNodes[7].firstElementChild.classList.remove("btn-danger");
+    i.lastElementChild.childNodes[7].firstElementChild.classList.add("btn-primary");
   }
 
   exListDOM.innerHTML = "";
